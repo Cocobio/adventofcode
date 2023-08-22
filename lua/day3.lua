@@ -16,6 +16,7 @@ local function getRepeatedChar(str1, str2)
     end
 end
 
+
 local function intersection(table1, table2)
     local table3 = {}
     for key in pairs(table1) do
@@ -45,8 +46,8 @@ for line in io.lines() do
     i = (i+1)%3
     local possibleBadge = {}
     line:gsub(".", function(c) possibleBadge[c]=1 end)
-    if i~=1 then badge = intersection(badge,possibleBadge)
-    else badge = possibleBadge end
+    if i==1 then badge = possibleBadge
+    else badge = intersection(badge,possibleBadge) end
 
     if i == 0 then
         for key in pairs(badge) do

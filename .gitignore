@@ -1,0 +1,5 @@
+*.exe
+*_inputs.txt
+*test.*
+
+inputs/
