@@ -1,6 +1,7 @@
 local stacks = {}
 local input_text = {}
 
+-- Copied from lua webpage
 local function deepcopy(orig)
     local orig_type = type(orig)
     local copy
