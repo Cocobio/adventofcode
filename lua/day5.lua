@@ -17,16 +17,6 @@ local function deepcopy(orig)
     return copy
 end
 
-local function printstacks()
-    for i in pairs(stacks) do
-        local str = ""
-        for j in pairs(stacks[i]) do str = str .. stacks[i][j] .. ' ' end
-
-        print(i, str)
-    end
-    print()
-end
-
 -- Parser for line
 local function parse_line(line)
     local parsed = {}
